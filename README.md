@@ -39,8 +39,8 @@ Display all the Transformed images.
 
 ## Program:
 
-Developed By: JEEVAGOWTHAM S
-Register Number:  212222230053
+##### Developed By: JAYAKRISHNAN L B L
+##### Register Number:  212222230052
 
 i)Image Translation:
 
@@ -48,11 +48,8 @@ i)Image Translation:
 import numpy as np
 import matplotlib.pyplot as plt 
 import cv2 as cv
-```
-```
-#plotting of an image :
 
-image = cv.imread("tree.jpg")
+image = cv.imread("color.jpg")
 image = cv.cvtColor(image, cv.COLOR_BGR2RGB)
 
 plt.axis("off")
@@ -131,15 +128,15 @@ v)Image Rotation:
 ```
 angle = 90 
 height, width = image.shape[:2]
-rotation_matrix = cv2.getRotationMatrix2D((width / 2, height / 2), angle, 1)
-rotated_image = cv2.warpAffine(image, rotation_matrix, (width, height))
+rotation_matrix = cv.getRotationMatrix2D((width / 2, height / 2), angle, 1)
+rotated_image = cv.warpAffine(image, rotation_matrix, (width, height))
 plt.figure(figsize=(10, 5))
 plt.subplot(1, 2, 1)
 plt.title('Original Image')
-plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+plt.imshow(cv.cvtColor(image, cv.COLOR_BGR2RGB))
 plt.subplot(1, 2, 2)
 plt.title('Rotated Image')
-plt.imshow(cv2.cvtColor(rotated_image, cv2.COLOR_BGR2RGB))
+plt.imshow(cv.cvtColor(rotated_image, cv.COLOR_BGR2RGB))
 
 plt.show()
 
@@ -152,87 +149,52 @@ vi)Image Cropping:
 x1, y1 = 100, 100 
 x2, y2 = 300, 300 
 cropped_image = image[y1:y2, x1:x2]
-plt.subplot(1, 2, 2)
+plt.subplot(1, 2, 1)
 plt.title('Cropped Image')
-plt.imshow(cv2.cvtColor(cropped_image, cv2.COLOR_BGR2RGB))
-
+plt.imshow(cv2.cvtColor(cropped_image, cv.COLOR_BGR2RGB))
 plt.show()
-
-
-
-
-
-
 
 ```
 ## Output:
 ### i)Image Translation:
-![Screenshot 2023-09-08 141339](https://github.com/JeevaGowtham-S/IMAGETRANSFORMATION/assets/118042624/3695f48b-c3b1-4b9b-bfa8-fd6e25764055)
+![image](https://github.com/Jayakrishnan22003251/IMAGETRANSFORMATION/assets/120232371/e6659997-ae78-4ad1-9439-cefe7657034e)
 
-![Screenshot 2023-09-08 194235](https://github.com/JeevaGowtham-S/IMAGETRANSFORMATION/assets/118042624/449db3bd-ec0d-4040-aaa2-5e215228fe18)
 
-<br>
-<br>
-<br>
-<br>
+![image](https://github.com/Jayakrishnan22003251/IMAGETRANSFORMATION/assets/120232371/8df1cef8-7f69-403e-917a-c90e9f694cbf)
+
+
+
+
+
+
 
 ### ii) Image Scaling:
-![Screenshot 2023-09-08 194253](https://github.com/JeevaGowtham-S/IMAGETRANSFORMATION/assets/118042624/c170acaa-a696-4647-8531-e09efc21d762)
+![image](https://github.com/Jayakrishnan22003251/IMAGETRANSFORMATION/assets/120232371/e7d46b82-bfa1-47fd-beec-79ad274007a9)
 
-<br>
-<br>
-<br>
-<br>
 
 
 ### iii)Image shearing:
-![Screenshot 2023-09-08 142317](https://github.com/JeevaGowtham-S/IMAGETRANSFORMATION/assets/118042624/d9e454ce-8402-4cbc-be23-e2935d483369)
-![Screenshot 2023-09-08 142327](https://github.com/JeevaGowtham-S/IMAGETRANSFORMATION/assets/118042624/43f6ec3a-b5e7-4292-a6d9-99c5691ecc40)
+![image](https://github.com/Jayakrishnan22003251/IMAGETRANSFORMATION/assets/120232371/93b4e97e-181e-44b7-b927-31204735ee7e)
+![image](https://github.com/Jayakrishnan22003251/IMAGETRANSFORMATION/assets/120232371/47d098e3-4b3d-44c2-a145-c371ed92af63)
 
-
-
-<br>
-<br>
-<br>
-<br>
 
 
 ### iv)Image Reflection:
-![Screenshot 2023-09-08 141339](https://github.com/JeevaGowtham-S/IMAGETRANSFORMATION/assets/118042624/851212e9-5a96-43f0-97be-550c9cc13b86)
-![Screenshot 2023-09-08 142608](https://github.com/JeevaGowtham-S/IMAGETRANSFORMATION/assets/118042624/6d521577-9378-4ea7-9f68-9685e15492f3)
+![image](https://github.com/Jayakrishnan22003251/IMAGETRANSFORMATION/assets/120232371/1228af8e-9b8a-4afe-8a6b-0a5080a64e48)
 
-<br>
-<br>
-<br>
-<br>
 
+![image](https://github.com/Jayakrishnan22003251/IMAGETRANSFORMATION/assets/120232371/00e995cd-78f0-44e2-91af-833adc6feb71)
 
 
 ### v)Image Rotation:
-![Screenshot 2023-09-08 195814](https://github.com/JeevaGowtham-S/IMAGETRANSFORMATION/assets/118042624/647c2bc5-7675-4b09-9143-a110bcf4fc1a)
+![image](https://github.com/Jayakrishnan22003251/IMAGETRANSFORMATION/assets/120232371/7ef3d135-1142-4647-8bad-0ed6a5bfbd1e)
 
-
-
-
-<br>
-<br>
-<br>
-<br>
 
 
 
 ### vi)Image Cropping:
 
-![Screenshot 2023-09-08 200126](https://github.com/JeevaGowtham-S/IMAGETRANSFORMATION/assets/118042624/f8a4d147-e1de-4f05-8aa9-e74f62c7986f)
-
-
-<br>
-<br>
-<br>
-<br>
-
-
-
+![image](https://github.com/Jayakrishnan22003251/IMAGETRANSFORMATION/assets/120232371/e4679aca-c120-4a53-ad09-a5e43c3d9745)
 
 ## Result: 
 
